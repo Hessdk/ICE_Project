@@ -32,7 +32,7 @@ class Gameplay {
 Player
 Negotiations
 startGame()
-nextPlayer()
+nextTurn()
 }
 class Player {
 Bank
@@ -41,6 +41,8 @@ Portfolio
 
 class ClientPool {
 Clients
+Arraylist <Clients> clientpool
+int randomizer
 }
 
 
@@ -50,6 +52,8 @@ acceptOffer()
 declineOffer()
 addClient ()
 removeClient()
+int randomizer2
+
 }
 
 class ClientNegotiations{
@@ -74,10 +78,14 @@ setBalance ()
 
 class Clients{
 String name
-int value
+int transferValue
 int age
 int potential
 String position
+int bureauContractLegnth
+int clubContractLength
+
+
 
 }
 
@@ -99,11 +107,11 @@ removeClient()
 
 class ClubSign{
 Bank
-addClient
+addClient()
 }
 
 class ClubExtention{
-removeClient
+removeClient()
 Bank
 }
 
